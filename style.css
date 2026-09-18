@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHST EYEWEAR — Launching Soon | ghsteyewear.com.au</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond for editorial serif headers & Inter for modern sans body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        sand: {
+                            50: '#fbfaf8',
+                            100: '#f5f3ee',
+                            200: '#e8e4da',
+                            300: '#d8d0c0',
+                            800: '#3a3630',
+                            900: '#1c1a17',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f6f5f2;
+            color: #1c1a17;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-title {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        /* Custom subtle focus style */
+        input:focus {
+            outline: none;
+            border-color: #1c1a17 !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between items-center text-center selection:bg-sand-200 selection:text-sand-900">
+
+    <!-- Navigation / Header -->
+    <header class="w-full pt-8 pb-6 px-6 sm:px-12 md:px-16 flex flex-col items-center justify-center gap-2 z-10 text-center">
+        <div class="tracking-widest lowercase text-xs sm:text-sm font-medium text-sand-800">
+            ghsteyewear.com.au
+        </div>
+        <div class="text-[10px] sm:text-xs tracking-widest uppercase text-sand-800/60 font-light">
+            Australia / 2026 Debut
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow w-full max-w-5xl px-6 sm:px-12 md:px-16 py-8 sm:py-12 flex flex-col items-center justify-center space-y-10 text-center">
+        
+        <!-- Header Text Section -->
+        <div class="space-y-4 max-w-2xl mx-auto flex flex-col items-center">
+            <span class="inline-block text-xs uppercase tracking-[0.25em] text-sand-800/80 font-medium bg-sand-200/60 px-3 py-1 rounded">
+                Launching Soon — Australia Exclusive
+            </span>
+            <h1 class="editorial-title text-5xl sm:text-6xl md:text-7xl font-light leading-[1.05] tracking-tight text-sand-900">
+                Coming Soon. <br/>
+                <span class="italic font-normal text-3xl sm:text-4xl md:text-5xl block pt-2 text-sand-800/90">Reframing the everyday view.</span>
+            </h1>
+            <p class="text-sm sm:text-base text-sand-800/80 font-light max-w-md leading-relaxed pt-2">
+                Designed for the Australian aesthetic and sun. Minimalist eyewear crafted with Japanese titanium and organic acetate. 
+            </p>
+        </div>
+
+        <!-- Full Width Sunglass Image -->
+        <div class="w-full relative aspect-[16/9] sm:aspect-[21/9] overflow-hidden rounded-md bg-sand-200 group shadow-sm">
+            <img 
+                src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=1600&auto=format&fit=crop" 
+                alt="GHST Eyewear Lifestyle Preview" 
+                class="w-full h-full object-cover object-center grayscale-[20%] contrast-[105%] transition-transform duration-1000 ease-out group-hover:scale-105"
+                onerror="this.onerror=null; this.src='https://placehold.co/1600x900/e8e4da/1c1a17?text=ghsteyewear.com.au';"
+            />
+            <!-- Soft gradient overlay for editorial warmth -->
+            <div class="absolute inset-0 bg-sand-900/5 mix-blend-multiply pointer-events-none"></div>
+            
+            <!-- Frame Detail Tag -->
+            <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-sand-50/90 backdrop-blur-md px-4 py-2 rounded text-[11px] tracking-wider uppercase text-sand-900 font-light shadow-sm">
+                ghsteyewear.com.au — Edition 01
+            </div>
+        </div>
+
+        <!-- Email Signup Form -->
+        <div class="w-full max-w-md mx-auto">
+            <form id="waitlist-form" onsubmit="handleSubscribe(event)" class="space-y-4">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-0 border-b sm:border-sand-900/30 pb-1 transition-all duration-300 focus-within:border-sand-900">
+                    <input 
+                        type="email" 
+                        id="email-input" 
+                        required 
+                        placeholder="Enter your email address" 
+                        class="w-full bg-transparent py-3 sm:py-2 px-4 sm:px-0 text-center sm:text-left text-sm placeholder:text-sand-800/40 border sm:border-none border-sand-900/20 rounded-md sm:rounded-none font-light focus:ring-0"
+                    />
+                    <button 
+                        type="submit" 
+                        class="w-full sm:w-auto bg-sand-900 text-sand-50 hover:bg-sand-800 px-6 py-3 sm:py-2 text-xs uppercase tracking-widest font-medium transition-colors duration-300 rounded-md sm:rounded-none shrink-0"
+                    >
+                        Get Early Access
+                    </button>
+                </div>
+                <p class="text-[11px] text-sand-800/50 font-light text-center">
+                    Be first in Australia to access our limited introductory release.
+                </p>
+            </form>
+
+            <!-- Success Message Container -->
+            <div id="success-message" class="hidden py-4 px-5 bg-sand-100 border border-sand-200 rounded-lg space-y-1 text-center">
+                <p class="editorial-title text-lg font-medium text-sand-900">You are on the Australian guestlist.</p>
+                <p class="text-xs text-sand-800/70 font-light">We will send you private access prior to the official launch.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="w-full py-6 px-6 sm:px-12 md:px-16 flex flex-col items-center justify-center text-center text-[11px] text-sand-800/50 font-light gap-2 border-t border-sand-200/60">
+        <div>
+            &copy; 2026 ghsteyewear.com.au. All rights reserved.
+        </div>
+        <div class="tracking-widest uppercase">
+            Sydney — Melbourne — Byron Bay
+        </div>
+    </footer>
+
+    <script>
+        function handleSubscribe(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('waitlist-form');
+            const successMsg = document.getElementById('success-message');
+            const emailInput = document.getElementById('email-input');
+
+            if (emailInput.value.trim() !== '') {
+                // Smooth fade transition
+                form.style.opacity = '0';
+                setTimeout(() => {
+                    form.classList.add('hidden');
+                    successMsg.classList.remove('hidden');
+                    successMsg.style.opacity = '1';
+                }, 300);
+            }
+        }
+    </script>
+</body>
+</html>
